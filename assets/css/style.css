@@ -21,11 +21,14 @@ header {
     justify-content: space-between;
     background-color: #17abb3;
     color: white;
-    height: 240px;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 header h1, header h2, .contacts {
-    margin: 0px;
+    margin: 0;
 }
 
 header h2 {
@@ -39,7 +42,7 @@ figure {
 }
 
 .photo {
-    flex-basis: 33%;
+    flex-basis: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,28 +53,42 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 5px solid white;
+}
+
+img:hover {
+    cursor: -webkit-zoom-in;
 }
 
 /* Infos */
 .infos {
     display: flex;
     flex-direction: column;
-    flex-basis: 67%;
+    flex-basis: 70%;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* Contacts */
 .contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items:self-end;
+    gap: 18px;
+    padding-top: 30px;
 }
 
 .contacts a {
     text-decoration: none;
     color: white;
+}
+
+.contacts-item {
+    display: flex;
+    width: 90%;
 }
 
 #mail, #adresse, #telephone, #permis {
@@ -86,26 +103,197 @@ main {
 
 /* Section principale */
 .principale {
-    flex-basis: 67%;
+    flex-basis: 70%;
+    padding-bottom: 57px;
 }
 
 article {
-    padding-left: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Profil */
+.profil {
+    padding-top: 42px;
+}
+
+.profil p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 0;
+}
+
+.profil p:nth-of-type(1) {
+    padding-top: 10px;
+}
+
+.profil p:nth-of-type(2) {
+    padding-bottom: 25px;
+}
+
+.principale h2 {
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+/* Formations, stages, experience professionnelle */
+.formations-div, .stages-div, .experience-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formation-titre, .stage-titre, .experience-titre {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    padding-bottom: 15px;
+}
+
+.formation-nom, .stage-nom, .experience-nom {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.formation-date, .stage-date, .experience-date {
+    color: #17abb3;
+    padding-top: 5px;
+}
+
+.formation-lieu, .stage-lieu, .experience-lieu {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* Survol des éléments */
+.formations-div:hover, .stages-div:hover, .experience-div:hover {
+    background-color: #e3e3e3;
+    padding-left: 10px;
+    border-left: 5px solid #17abb3;
 }
 
 /* Section latérale */
 aside {
     order: -1;
-    flex-basis: 33%;
+    flex-basis: 30%;
     background-color: #e3e3e3;
+    align-items: center;
 }
+
+aside section {
+    padding: 30px 50px 0;
+}
+
+aside h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Competences et langues */
+.competences-div, .langues-div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.competences-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #17abb3;
+}
+
+.competence-nom {
+    color: black;
+}
+
+.competences-div {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.langues-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 0;
+}
+
+.competences-item i {
+    font-size: 0.8rem;
+}
+
+.langue-nom {
+    font-weight: bold;
+}
+
+.langues h2, .qualites h2, .centres-interet h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.langue, .qualites, .centres-interet {
+    margin: 0;
+    padding-top: 15px;
+}
+
+/* Qualités et centres d'intérêt */
+.qualites ul, .centres-interet ul {
+    list-style-type: square;
+    padding-left: 23px;
+}
+
+.qualites li::marker, .centres-interet li::marker {
+    color: #17abb3;
+    font-size: 1.5rem;
+}
+
+.qualites ul, .centres-interet ul {
+    padding-top: 6px;
+}
+.qualites ul li, .centres-interet ul li {
+    padding: 0px;
+    margin: 0;
+    line-height: 0.9;
+}
+
 
 /* Pied de page */
 footer {
+    height: 85px;
     background-color: #17abb3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.pied-de-page {
+    flex-basis: 45%;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 25px;
+}
+
+.reseaux-sociaux i {
+    font-size: 25px;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+footer i:hover {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.maj {
+    font-style: italic;
 }

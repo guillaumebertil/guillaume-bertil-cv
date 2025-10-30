@@ -17,7 +17,7 @@
         <!-- Photo de profil -->
         <div class="photo">
             <figure>
-                <img src="./assets/img/photo-de-profil.jpg" alt="photo de profil">
+                <a href="./assets/img/photo-de-profil.jpg"><img src="./assets/img/photo-de-profil.jpg" alt="photo de profil"></a>
             </figure>
         </div>
 
@@ -31,25 +31,29 @@
 
             <!-- Contacts -->
             <div class="contacts">
-                <span id="mail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:guillaume.bertil@gmail.com">Mail</a>
-                </span>
+                <div class="contacts-item">
+                    <span id="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:guillaume.bertil@gmail.com">Mail</a>
+                    </span>
 
-                <span id="adresse">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="https://www.google.com/maps">Adresse</a>
-                </span>
+                    <span id="adresse">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://www.google.com/maps">Adresse</a>
+                    </span>
+                </div>
 
-                <span id="telephone">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+0612345678">Téléphone</a>
-                </span>
+                <div class="contacts-item">
+                    <span id="telephone">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+0612345678">Téléphone</a>
+                    </span>
 
-                <span id="permis">
-                    <i class="fa-solid fa-car"></i>
-                    <span id="permis-b">Permis B</span>
-                </span>
+                    <span id="permis">
+                        <i class="fa-solid fa-car"></i>
+                        <span id="permis-b">Permis B</span>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
@@ -75,53 +79,73 @@
             <article class="formations">
                 <h2>Formations</h2>
                 <hr>
-                <h3 class="formation-nom">Titre Professionnelle DWWM</h3>
-                <p>
+                <div class="formations-div">
+                    <div class="formation-titre">
+                        <span class="formation-nom">Titre Professionnel DWWM</span>
+                        <span class="formation-lieu">Centre Européen de Formation</span>
+                    </div>
                     <span class="formation-date">2025/2026</span>
-                    <span class="formation-lieu">Centre Européen de Formation</span>
-                </p>
-                <h3 class="formation-nom">Baccalauréat STG</h3>
-                <p>
+                </div>
+
+                <div class="formations-div">
+                    <div class="formation-titre">
+                        <span class="formation-nom">Baccalauréat STG</span>
+                        <span class="formation-lieu">Lycée Lecomte de Lisle</span>
+                    </div>
                     <span class="formation-date">2008</span>
-                    <span class="formation-lieu">Lycée Lecomte de Lisle</span>
-                </p>
+                </div>
             </article>
+
 
             <!-- Stages -->
             <article class="stages">
                 <h2>Stages</h2>
                 <hr>
-                <h3 class="stage-nom">Vendeur prêt-à-porter</h3>
-                <p>
-                    <span class="stage-date">Novembre 2012</span>
-                    <span class="stage-lieu">Jules</span>
-                </p>
-                <h3 class="stage-nom">Vendeur prêt-à-porter</h3>
-                <p>
+                <div class="stages-div">
+                    <div class="stage-titre">
+                        <span class="stage-nom">Vendeur prêt-à-porter</span>
+                        <span class="stage-lieu">Jules</span>
+                    </div>
+                        <span class="stage-date">Novembre 2012</span>
+                </div>
+
+                <div class="stages-div">
+                    <div class="stage-titre">
+                        <span class="stage-nom">Vendeur prêt-à-porter</span>
+                        <span class="stage-lieu">Brice</span>
+                    </div>
                     <span class="stage-date">Décembre 2012</span>
-                    <span class="stage-lieu">Brice</span>
-                </p>
+                </div>
             </article>
 
             <!-- Expérience professionnelle -->
             <article class="experience-personnelle">
                 <h2>Expérience professionnelle</h2>
                 <hr>
-                <h3 class="experience-nom">Militaire</h3>
-                <p>
+                <div class="experience-div">
+                    <div class="experience-titre">
+                        <span class="experience-nom">Militaire</span>
+                        <span class="experience-lieu">Armée de Terre</span>
+                    </div> 
                     <span class="experience-date">Novembre 2015 - Novembre 2024</span>
-                    <span class="experience-lieu">Armée de Terre</span>
-                </p>
-                <h3 class="experience-nom">Préparateur de commande</h3>
-                <p>
+                </div>
+                
+                <div class="experience-div">
+                    <div class="experience-titre">
+                        <span class="experience-nom">Préparateur de commande</span>
+                        <span class="experience-lieu">Agence Réunionnaise de Distribution de Presse</span>
+                    </div>
                     <span class="experience-date">Mars 2014 - Septembre 2014</span>
-                    <span class="experience-lieu">Agence Réunionnaise de Distribution de Presse</span>
-                </p>
-                <h3 class="experience-nom">Vendeur prêt-à-porter</h3>
-                <p>
+                </div>  
+                
+                <div class="experience-div">
+                    <div class="experience-titre">
+                        <span class="experience-nom">Vendeur prêt-à-porter</span>
+                        <span class="experience-lieu">Jules</span>
+                    </div>
                     <span class="experience-date">Décembre 2012 - Mars 2013</span>
-                    <span class="experience-lieu">Jules</span>
-                </p>
+                </div>    
+                
             </article>
         </section>
 
@@ -130,48 +154,79 @@
             <!-- Compétences -->
             <section class="competences">
                 <h2>Compétences</h2>
-                <ul>
-                    <li class="competences-item">
-                        <span class="competence-nom">HTML</span>
-                        <span class="competence-niveau"></span>
-                    </li>
-                    <li class="competences-item">
-                        <span class="competence-nom">CSS</span>
-                        <span class="competence-niveau"></span>
-                    </li>
-                    <li class="competences-item">
-                        <span class="competence-nom">Javascript</span>
-                        <span class="competence-niveau"></span>
-                    </li>
-                    <li class="competences-item">
-                        <span class="competence-nom">Python</span>
-                        <span class="competence-niveau"></span>
-                    </li>
-                </ul>
+                <hr>
+                    <div class="competences-div">
+                        <div class="competences-item">
+                            <span class="competence-nom">HTML</span>
+                            <span class="competence-niveau">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    
+                        <div class="competences-item">
+                            <span class="competence-nom">CSS</span>
+                            <span class="competence-niveau">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+
+                        <div class="competences-item">
+                            <span class="competence-nom">Javascript</span>
+                            <span class="competence-niveau">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+
+                        <div class="competences-item">
+                            <span class="competence-nom">Python</span>
+                            <span class="competence-niveau">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                
             </section>
 
             <!-- Langues -->
             <section class="langues">
                 <h2>Langues</h2>
-                <ul>
-                    <li class="langues-item">
-                        <span class="langue-nom">Français</span>
-                        <span class="langue-niveau">Langue maternelle</span>
-                    </li>
-                    <li class="langues-item">
-                        <span class="langue-nom">Anglais</span>
-                        <span class="langue-niveau">Notions</span>
-                    </li>
-                    <li class="langues-item">
-                        <span class="langue-nom">Allemand</span>
-                        <span class="langue-niveau">Notions</span>
-                    </li>
-                </ul>
+                <hr>
+                    <div class="langues-div">
+                        <div class="langues-item">
+                            <span class="langue-nom">Français</span>
+                            <span class="langue-niveau">Langue maternelle</span>
+                        </div>
+                        <div class="langues-item">
+                            <span class="langue-nom">Anglais</span>
+                            <span class="langue-niveau">Notions</span>
+                        </div>
+                        <div class="langues-item">
+                            <span class="langue-nom">Allemand</span>
+                            <span class="langue-niveau">Notions</span>
+                        </div>
+                    </div>
             </section>
 
             <!-- Qualités -->
             <section class="qualites">
                 <h2>Qualités</h2>
+                <hr>
                 <ul>
                     <li>Autonomie</li>
                     <li>Organisation</li>
@@ -183,6 +238,7 @@
             <!-- Centres d'intérêt -->
             <section class="centres-interet">
                 <h2>Centres d'intérêt</h2>
+                <hr>
                 <ul>
                     <li>Sports mécaniques</li>
                     <li>Musique</li>
@@ -198,21 +254,23 @@
     <!-- Pied de page -->
     <footer>
         <!-- Liens vers les réseaux sociaux -->
-        <div class="reseaux-sociaux">
-            <a href="#" class="linkedin" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="github" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" class="instagram" aria-label="Instagram">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-        </div>
-
-        <!-- Date de la dernière mise à jour -->
-        <div class="maj">
-            Mise à jour le <time datetime="2025/10/28">28/10/2025</time>
+        <div class="pied-de-page">
+            <div class="reseaux-sociaux">
+                <a href="#" class="linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="github" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        
+            <!-- Date de la dernière mise à jour -->
+            <div class="maj">
+                <small>Mis à jour le <time datetime="2025/10/28">30/10/2025</time></small>
+            </div>
         </div>
     </footer>
 
